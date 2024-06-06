@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Central Dashboard</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrQkTy9dZLJ1W9NSkhU+6yJc6lAbdPTlKl8Dae57yGeCfOMiTStEmjEyghsgXf8eC6KWoLg3KN3fT9RbZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../images/gab.png" alt="Logo">
+            <span>Forms Central</span>
+        </div>
+        <div class="header-right">
+            <div class="search-bar">
+                <input type="text" placeholder="Logs, Requests, etc...">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="user-info">
+                <img src="../images/gab.png" alt="User">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </header>
+    <div class="sidebar">
+        <div class="user-profile">
+            <img src="../images/gabu.jpg" alt="Rainer Saludes">
+            <h3>Rainer Saludes</h3>
+            <span class="role">Admin</span>
+        </div>
+        <nav>
+            <ul>
+                <li class="general"><a href="#">General</a></li>
+                <li><a href="homepage.html">Admin Dashboard</a></li>
+                <li><a href="usermanagement.html" class="active">User Management</a></li>
+                <li><a href="pendingrequest.html">Pending Requests</a></li>
+                <li><a href="documentmanagement.html">Document Management</a></li>
+                <li><a href="feedbackandsupport.html">Feedback & Support</a></li>
+                <li><a href="systemsettings.html">System Settings</a></li>
+                <li><a href="communicationandhelp.html">Communication & Help</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <section class="dashboard">
+            <h2 class="RU">Registered Users</h2>
+            <div class="sort">
+                <span>Sort by:</span>
+                <button>Names(A-Z)</button>
+            </div>
+            <ul class="user-list">
+                <li class="user-item">
+                    <span>Amogus Sushii</span>
+                </li>
+                <li class="user-item active">
+                    <span class="name">Brian Gabriel Lupig</span>
+                    <span class="email">BrianGabrielLupig@gmail.com</span>
+                    <span class="phone"># 09123456789</span>
+                </li>
+                <li class="user-item">
+                    <span>User 3</span>
+                </li>
+                <li class="user-item">
+                    <span>User 4</span>
+                </li>
+                <li class="user-item">
+                    <span>User 5</span>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<documents>
+    <document>
+        <type>Clearance</type>
+        <content>This is a clearance document.</content>
+    </document>
+    <document>
+        <type>Sedula</type>
+        <content>This is a sedula document.</content>
+    </document>
+    <document>
+        <type>Certificate</type>
+        <content>This is a certificate document.</content>
+    </document>
+</documents>

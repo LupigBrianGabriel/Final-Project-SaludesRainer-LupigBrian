@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Central Dashboard</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrQkTy9dZLJ1W9NSkhU+6yJc6lAbdPTlKl8Dae57yGeCfOMiTStEmjEyghsgXf8eC6KWoLg3KN3fT9RbZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../images/logo.png" alt="Logo">
+            <span>Forms Central</span>
+        </div>
+        <div class="header-right">
+            <div class="search-bar">
+        <form id="searchForm" action="search.php" method="POST">
+            <input type="text" name="query" placeholder="Logs, Requests, etc..." id="searchInput">
+            <i class="fas fa-search" onclick="document.getElementById('searchForm').submit();"></i>
+        </form>
+    </div>
+
+    <div id="results"></div>
+
+    <script>
+        document.getElementById('searchForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var formData = new FormData(this);
+
+            fetch('search.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('results').innerHTML = data;
+            })
+            .catch(error => console.error('Error:', error));
+        });
+
+        document.getElementById('searchInput').addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                event.preventDefault();
+                document.getElementById('searchForm').submit();
+            }
+        });
+    </script>
+            <div class="user-info">
+                <img src="../images/gab.png" alt="User">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </header>
+    <div class="sidebar">
+        <div class="user-profile">
+            <img src="../images/gabu.jpg" alt="Rainer Saludes">
+            <h3>Rainer Saludes</h3>
+            <span class="role">Admin</span>
+        </div>
+        <nav>
+            <ul>
+                <li class="general"><a href="#">General</a></li>
+                <li><a href="homepage.html" class="active">Admin Dashboard</a></li>
+                <li><a href="usermanagement.html ">User Management</a></li>
+                <li><a href="pendingrequest.html ">Pending Requests</a></li>
+                <li><a href="documentmanagement.html ">Document Management</a></li>
+                <li><a href="feedbackandsupport.html ">Feedback & Support</a></li>
+                <li><a href="systemsettings.html ">System Settings</a></li>
+                <li><a href="communicationandhelp.html">Communication & Help</a></li>
+            </ul>
+        </nav>
+    </div>
+      <main>
+        <div class="dashboard">
+            <!-- Wrap the first card in an anchor tag -->
+            <a href="usermanagement.html" class="card">
+                <i class="fas fa-users"></i>
+                <div class="card-info">
+                    <h2>12</h2>
+                    <p>Registered Users</p>
+                </div>
+            </a>
+            <a href="pendingrequest.html" class="card">
+                <i class="fas fa-clock"></i>
+                <div class="card-info">
+                    <h2>1</h2>
+                    <p>Pending Requests</p>
+                </div>
+            </a>
+            <!-- Wrap the third card in an anchor tag -->
+            <a href="documentmanagement.html" class="card">
+                <i class="fas fa-file-alt"></i>
+                <div class="card-info">
+                    <h2>Document Management</h2>
+                </div>
+            </a>
+        </div>
+    </main>
+</body>
+</html>

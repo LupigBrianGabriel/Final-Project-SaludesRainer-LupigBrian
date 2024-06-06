@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    height: 100%;
+    padding-top: 20px;
+}
+
+.sidebar .profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar .profile img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.sidebar .profile span {
+    display: block;
+}
+
+.sidebar .profile .user-role {
+    color: limegreen;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+.sidebar nav ul li.active, .sidebar nav ul li:hover {
+    background-color: #444;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header .user-actions {
+    display: flex;
+    align-items: center;
+}
+
+header .user-actions input[type="search"] {
+    padding: 5px;
+    margin-right: 20px;
+}
+
+header .user-actions span {
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+header .user-actions .user-profile {
+    font-weight: bold;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.faq-section {
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.faq-section h2 {
+    text-align: center;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-question {
+    background-color: #8a2be2;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.faq-answer {
+    padding: 10px;
+    background-color: #fff;
+    border-left: 5px solid #8a2be2;
+}
+.contact-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-form h1 {
+    margin-top: 0;
+}
+
+.contact-form .form-group {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.contact-form .form-group input, 
+.contact-form .form-group textarea {
+    flex: 1;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.contact-form .form-group textarea {
+    resize: none;
+    height: 100px;
+}
+
+.contact-form button {
+    background-color: #7f60e6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}
+
+.contact-form button:hover {
+    background-color: #6a50c7;
+}

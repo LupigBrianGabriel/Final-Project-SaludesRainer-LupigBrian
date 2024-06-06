@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/style.css">
+      <script>
+        function handleSignUp(event) {
+            event.preventDefault();
+            // Add your sign-up logic here, e.g., form validation and AJAX request.
+            // On successful sign-up:
+            window.location.href = 'webpages/homepage.html';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Forms Central</h1>
+    </header>
+    <div class="container">
+        <div class="form-container">
+            <h2>Sign Up</h2>
+            <form action="signup.php" method="post">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="button-container">
+                    <button type="submit" class="sign-up-btn">Sign Up</button>
+                </div>
+            </form>
+            <p>Already have an account? <a href="login.html" class="log-in-link">Log In</a></p>
+        </div>
+    </div>
+</body>
+</html>

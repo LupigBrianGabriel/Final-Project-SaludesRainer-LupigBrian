@@ -1,0 +1,145 @@
+body {
+    background: url("../bg.jpg") fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+}
+header {
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    background: linear-gradient(to right, #8A2BE2, #DA70D6);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.container {
+    color: white;
+    margin-top: 60px;
+    font-family: Century Gothic;
+    font-weight: bolder;
+    text-align: justify;
+}
+
+.big-text {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.small-text {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+.button-container {
+    display: flex;
+    gap: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
+
+a {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+
+.input-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.button-container {
+    margin-top: 20px;
+    width: 70%;
+}
+
+button, a {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.sign-up-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.sign-up-btn:hover {
+    background-color: green;
+}
+
+.log-in-btn {
+    background-color: #008CBA;
+    color: white;
+}
+
+.log-in-btn:hover {
+    background-color: blue;
+}
+
+p {
+    margin-top: 20px;
+    text-align: center;
+}
+
+a {
+    color: #DA70D6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

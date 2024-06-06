@@ -1,0 +1,331 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightgrey;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+header .header-right {
+    display: flex;
+    align-items: center;
+}
+
+header .search-bar {
+    display: flex;
+    align-items: center;
+    background: #444;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+header .search-bar input {
+    background: none;
+    border: none;
+    color: white;
+    outline: none;
+    padding: 5px;
+}
+
+header .user-info {
+    display: flex;
+    align-items: center;
+}
+
+header .user-info img {
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #2c2c2c;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar .user-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sidebar .user-profile img {
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.sidebar .user-profile h3 {
+    margin: 5px 0;
+}
+
+.sidebar .user-profile .role {
+    color: #ccc;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 10px 0;
+}
+
+.sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #444;
+}
+.sidebar nav ul li a.active {
+    background-color: #8A2BE2;
+    color: white; 
+    font-weight: bold; 
+}
+
+.sidebar nav ul li a.active:hover {
+    background-color: #5a189a;
+}
+
+.main-content {
+    flex-grow: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 5px;
+}
+
+.user-menu {
+    display: flex;
+    align-items: center;
+}
+
+.user-menu input[type="search"] {
+    padding: 5px;
+    margin-right: 20px;
+}
+
+.user-menu .notifications {
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.user-menu .user-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.dashboard {
+
+    padding: 20px;
+    margin-top: 100px;
+    margin-left: 280px;
+}
+.general{
+    border-bottom: solid magenta; 2px;
+}
+.dashboard h2 {
+    margin-top: 0;
+}
+
+.sort-options {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.sort-options button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.user-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.user-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.user-item.active {
+    background-color: violet;
+}
+
+.user-item .name {
+    font-weight: bold;
+}
+
+.user-item .email, .user-item .phone {
+    display: block;
+    margin-top: 5px;
+    color: #555;
+}
+.user-info{
+    margin-right: 50px;
+}
+.dashboard {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    width: 100%;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex: 1;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none; /* Remove underline from links */
+    color: black; /* Ensure text color is readable */
+    max-width: 320px;
+    min-height: 500px; /* Set a minimum height */
+    border: 2px solid #8A2BE2; /* Added border property */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Added transition for smooth hover effect */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Moves the card up */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* Increases shadow on hover */
+    background-color: #8A2BE2;
+}
+
+.card i {
+    font-size: 2em;
+    color: #8A2BE2;
+    margin-bottom: 10px;
+}
+
+.card-info h2 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.card-info p {
+    color: #555;
+    margin: 0;
+}
+a.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit; /* Ensure the text color is inherited */
+
+.sort-options {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.sort-options button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.user-list {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.user-item {
+    display: block;
+    margin-bottom: 10px; /* Adjust the margin as needed */
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.user-item.active {
+    background-color: #e5d7f5;
+}
+
+.user-item .name {
+    font-weight: bold;
+}
+
+.user-item .email, .user-item .phone {
+    display: block;
+    margin-top: 5px;
+    color: #555;
+}
+.RU, .sort{
+    max-width: 100px;
+    background-color: green;
+    padding-top: 0;
+    text-align: justify;
+}
+.div button{
+    height: 300px;
+    width: 300px;
+}
+.document-grid{
+    width: 200px;
+    height: 200px;
+}
